@@ -1,0 +1,23 @@
+# Dependências e cache do Expo
+node_modules/
+.expo/
+.expo-shared/
+
+# Builds e artefatos
+dist/
+build/
+web-build/
+coverage/
+
+# Pastas nativas (se usar bare workflow ou prebuild)
+android/
+ios/
+
+# Arquivos gerados pelo TypeScript / Expo
+expo-env.d.ts
+*.tsbuildinfo
+
+# Lockfiles
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
