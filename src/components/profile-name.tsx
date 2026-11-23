@@ -1,4 +1,4 @@
-import { AppText } from "@/components/ui/AppText";
+import { ThemedText } from "@/components/themed-text";
 import { Image, StyleSheet, TouchableOpacity, View } from "react-native";
 
 export default function ProfileName({ nome, perfil }: any) {
@@ -6,7 +6,7 @@ export default function ProfileName({ nome, perfil }: any) {
     <TouchableOpacity style={styles.btnProfile}>
       {!perfil ? (
         <View style={styles.profilePicture}>
-          <AppText style={{ fontSize: 25 }}>{nome[0]}</AppText>
+          <ThemedText style={{ fontSize: 25 }}>{nome[0]}</ThemedText>
         </View>
       ) : (
         <Image
@@ -15,7 +15,7 @@ export default function ProfileName({ nome, perfil }: any) {
           style={styles.profilePicture}
         />
       )}
-      <AppText style={{ fontSize: 20 }}>Olá, {nome}!</AppText>
+      <ThemedText style={{ fontSize: 20 }}>Olá, {nome}!</ThemedText>
     </TouchableOpacity>
   );
 }
